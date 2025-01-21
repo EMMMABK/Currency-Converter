@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './App.css';
 import Currency from './components/Currency/Currency';
 
-BASE_URL = BASE_URL
+const BASE_URL = BASE_URL
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([])
@@ -15,9 +15,13 @@ function App() {
   return (
    <> 
     <h1>Currency Converter</h1>
-    <Currency />
+    <Currency
+      currencyOptions={currencyOptions}
+    />
     <div className='equals'>=</div>
-    <Currency/>
+    <Currency
+      currencyOptions={currencyOptions }
+    />
   </>
   );
 }
