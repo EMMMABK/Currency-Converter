@@ -3,7 +3,7 @@
  export default function Currency() {
    return (
      <div>
-       <input type="number" />
+       <input className='input' type="number" />
        <select name="currency_option" id="">
           <option value="USD">USD</option>
        </select>
