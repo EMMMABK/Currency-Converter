@@ -20,16 +20,21 @@ function App() {
       setFromCurrency(data.base)
       setToCurrency(firstCurrency)
     })
-  })
+    .catch((error) => console.error('Error fetching currency data:', error));  
+  }, [])
   return (
    <> 
     <h1>Currency Converter</h1>
     <Currency
       currencyOptions={currencyOptions}
+      selectedCurrency={fromCurrency}
+      onChangeCurrency={e => setFromCurrency(e.target.value)}
     />
     <div className='equals'>=</div>
     <Currency
-      currencyOptions={currencyOptions }
+      currencyOptions={currencyOptions}
+      selectedCurrency={toCurrency}
+      onChangeCurrency={e => setToCurrency(e.target.value)}
     />
   </>
   );
