@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './App.scss';
 import Currency from './components/Currency/Currency';
 
-const BASE_URL = 'YOUR_CURRENCY_API'
+const BASE_URL = 'YOUR_API_CURRENCY'
 
 
 function App() {

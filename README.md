@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Currency Converter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Currency Converter is a user-friendly React application that allows users to convert between different currencies. The app fetches real-time exchange rates from a remote API and features a sleek, responsive design implemented with SCSS. The application consists of two main input fields for selecting and entering currency values, making it easy to convert amounts from one currency to another seamlessly.
 
-## Available Scripts
+## Screenshots
+![Currency1](./assets/curr1.png)
+![Currency1](./assets/curr2.png)
 
-In the project directory, you can run:
+## Features
+- **Real-time exchange rates**: Fetches live currency data to ensure accurate conversions.
+- **Responsive design**: Optimized for both desktop and mobile screens using SCSS.
+- **User-friendly interface**: Simple and intuitive layout for easy navigation.
+- **Dynamic input handling**: Update conversions in real time as the user enters amounts or changes currencies.
 
-### `npm start`
+## Technologies Used
+- **React**: Core library for building the user interface.
+- **SCSS**: Styling for enhanced design and responsiveness.
+- **Fetch API**: Retrieves live exchange rate data from a remote source.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+To set up and run the Currency Converter locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/currency-converter.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd currency-converter
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm test`
+## File Structure
+```
+.
+├── src
+│   ├── components
+│   │   └── Currency
+│   │       ├── Currency.js
+│   │       └── Currency.scss
+│   ├── App.js
+│   ├── App.scss
+│   └── index.js
+├── public
+│   ├── currency.json (mock API data)
+│   └── index.html
+├── package.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
+1. **Currency Selection**: The user selects the desired currencies from dropdown menus.
+2. **Input Handling**: Users can input an amount to be converted in either field. The app automatically updates the other field based on the exchange rate.
+3. **Dynamic Fetching**: The app dynamically fetches the exchange rate between the selected currencies when either dropdown is changed.
 
-### `npm run build`
+## SCSS Styling
+The SCSS structure ensures modular and reusable styling. Key design features include:
+- Flexbox for layout alignment.
+- Transitions and focus effects for input fields.
+- Adaptive font sizes and padding for smaller screens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Topics
+- React
+- SCSS
+- Currency Conversion
+- Responsive Design
+- Fetch API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
+Contributions are welcome! If you would like to contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add a new feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
