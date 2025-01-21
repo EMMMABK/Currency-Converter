@@ -1,5 +1,6 @@
  import React from 'react'
- 
+ import './Currency.scss';
+
  export default function Currency(props) {
   const {
     currencyOptions,
@@ -9,14 +10,14 @@
     amount
   } = props
    return (
-     <div>
-       <input className='input' type="number" value={amount} onChange={onChangeAmount}/>
-       <select value={selectedCurrency} name="currency_option" id="" onChange={onChangeCurrency}>
+    <div className="currency-container">
+      <input className="input" type="number" value={amount} onChange={onChangeAmount} />
+      <select value={selectedCurrency} name="currency_option" id="" onChange={onChangeCurrency}>
         {currencyOptions.map(option => (
           <option key={option} value={option}>{option}</option>
         ))}
-       </select>
-     </div>
-   )
- }
+      </select>
+    </div>  
+  )
+}
  
