@@ -4,11 +4,12 @@
   const {
     currencyOptions,
     selectedCurrency,
-    onChangeCurrency
+    onChangeCurrency,
+    amount
   } = props
    return (
      <div>
-       <input className='input' type="number" />
+       <input className='input' type="number" value={amount}/>
        <select value={selectedCurrency} name="currency_option" id="" onChange={onChangeCurrency}>
         {currencyOptions.map(option => (
           <option key={option} value={option}>{option}</option>
